@@ -4,6 +4,14 @@ Upload a PDF or text file, ask questions about it, and get grounded answers with
 
 ---
 
+## Screenshots
+
+| Upload & Index | Ask & Get Cited Answers |
+|---|---|
+| ![DocuChat UI](screenshots/docuchat-ui.png) | ![DocuChat Answer](screenshots/docuchat-answer.png) |
+
+---
+
 ## Architecture
 
 ```
