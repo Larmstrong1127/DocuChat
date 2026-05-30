@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocuChat — RAG-Powered Document Q&A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================================================================
+       APP SHELL
+  ================================================================ -->
+  <div class="app-shell">
+
+    <!-- ---- LEFT SIDEBAR ---- -->
+    <aside class="sidebar">
+
+      <!-- Brand -->
+      <div class="sidebar-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">DocuChat</h1>
+          <p class="brand-sub">RAG-Powered Q&amp;A</p>
+        </div>
+      </div>
+
+      <!-- Upload zone -->
+      <section class="upload-section">
+        <h2 class="section-title">Upload Document</h2>
+        <div class="drop-zone" id="dropZone" role="button" tabindex="0" aria-label="Click or drag a PDF or text file to upload">
+          <div class="drop-zone-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 16 12 12 8 16"/>
+              <line x1="12" y1="12" x2="12" y2="21"/>
+              <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/>
+            </svg>
+          </div>
+          <p class="drop-zone-text">Drag &amp; drop a file here</p>
+          <p class="drop-zone-hint">or click to browse</p>
+          <p class="drop-zone-types">PDF &middot; TXT</p>
+          <input type="file" id="fileInput" accept=".pdf,.txt" hidden aria-hidden="true" />
+        </div>
+
+        <!-- Upload progress / status -->
+        <div class="upload-status" id="uploadStatus" hidden>
+          <div class="upload-status-inner">
+            <div class="spinner" id="uploadSpinner"></div>
+            <span id="uploadStatusText">Uploading…</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Indexed documents -->
+      <section class="docs-section">
+        <div class="docs-header">
+          <h2 class="section-title">Indexed Documents</h2>
+          <button class="btn-icon" id="refreshDocsBtn" title="Refresh document list" aria-label="Refresh documents">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"/>
+              <polyline points="1 20 1 14 7 14"/>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="doc-list" id="docList" aria-label="Indexed documents">
+          <li class="doc-list-empty" id="docListEmpty">
+            <span>No documents indexed yet.</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- How it works -->
+      <section class="how-section">
+        <h2 class="section-title">How It Works</h2>
+        <ol class="how-steps">
+          <li class="how-step">
+            <span class="step-num">1</span>
+            <div>
+              <strong>Parse</strong>
+              <p>PDF text is extracted page by page.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <span class="step-num">2</span>
+            <div>
+              <strong>Chunk</strong>
+              <p>Text is split into overlapping 600-char windows.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <span class="step-num">3</span>
+            <div>
+              <strong>Embed</strong>
+              <p>Each chunk is encoded into a 384-dim vector.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <span class="step-num">4</span>
+            <div>
+              <strong>Store</strong>
+              <p>Vectors are persisted in ChromaDB with cosine space.</p>
+            </div>
+          </li>
+          <li class="how-step">
+            <span class="step-num">5</span>
+            <div>
+              <strong>Retrieve &amp; Generate</strong>
+              <p>Your question is embedded → top chunks retrieved → Claude answers.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+    </aside>
+
+    <!-- ---- MAIN CHAT PANEL ---- -->
+    <main class="chat-panel">
+
+      <!-- Chat header -->
+      <header class="chat-header">
+        <div class="chat-header-left">
+          <div class="status-dot" id="statusDot" title="API status"></div>
+          <span class="chat-header-title">Ask your documents anything</span>
+        </div>
+        <div class="chat-header-right">
+          <span class="model-badge">claude-3-5-haiku</span>
+          <span class="model-badge model-badge-green">all-MiniLM-L6-v2</span>
+        </div>
+      </header>
+
+      <!-- Chat history -->
+      <div class="chat-history" id="chatHistory" role="log" aria-live="polite" aria-label="Chat history">
+        <!-- Welcome message -->
+        <div class="welcome-card">
+          <div class="welcome-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Welcome to DocuChat</h3>
+            <p>Upload a PDF or text file using the sidebar, then ask questions about its contents. Answers are grounded in your documents and include source citations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing indicator (hidden by default) -->
+      <div class="typing-indicator" id="typingIndicator" hidden aria-label="Assistant is typing">
+        <div class="typing-bubble">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="typing-text">DocuChat is thinking…</span>
+      </div>
+
+      <!-- Input bar -->
+      <div class="input-bar">
+        <div class="input-wrapper">
+          <textarea
+            id="questionInput"
+            class="question-input"
+            placeholder="Ask a question about your uploaded documents…"
+            rows="1"
+            aria-label="Question input"
+            maxlength="2000"
+          ></textarea>
+        </div>
+        <button class="send-btn" id="sendBtn" title="Send message" aria-label="Send message">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+
+    </main>
+
+  </div><!-- /.app-shell -->
+
+  <script src="app.js"></script>
+</body>
+</html>

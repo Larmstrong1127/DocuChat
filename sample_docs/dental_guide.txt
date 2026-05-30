@@ -1,0 +1,221 @@
+COMPREHENSIVE DENTAL CARE GUIDE
+A Reference for Patients and Dental Professionals
+
+================================================================================
+SECTION 1: CDT CODE REFERENCE
+================================================================================
+
+CDT (Current Dental Terminology) codes are the standardized codes used by dental
+offices and insurance companies to describe dental procedures. Understanding common
+CDT codes helps patients read their treatment plans and Explanation of Benefits (EOB)
+statements more accurately.
+
+D0120 — Periodic Oral Evaluation
+This code covers a routine check-up for an established patient. The dentist examines
+teeth, gums, and oral tissues, reviews X-rays, and documents any changes since the
+last visit. Most insurance plans cover D0120 twice per year at no cost to the patient.
+This visit typically takes 10–15 minutes and is separate from the cleaning appointment.
+
+D1110 — Prophylaxis (Adult Cleaning)
+A professional cleaning performed by a registered dental hygienist. During a D1110
+visit, the hygienist removes soft plaque and hard calculus (tartar) from all tooth
+surfaces above and below the gumline using hand instruments and an ultrasonic scaler.
+The appointment concludes with polishing and fluoride application. Most PPO plans
+cover two D1110 cleanings per calendar year at 100%. Patients with active gum disease
+may be moved to a more frequent D4910 periodontal maintenance schedule instead.
+
+D2140 — Amalgam Restoration, One Surface
+A silver (amalgam) filling placed on one surface of a posterior tooth (molar or
+premolar). Amalgam is durable and long-lasting — typically 10–15 years — making it
+a cost-effective choice for back teeth. Insurance plans often cover amalgam restorations
+at 80% after the annual deductible. If the patient requests a tooth-colored composite
+instead (D2391), the plan may only pay the amalgam rate and bill the patient the
+cost difference.
+
+D7210 — Extraction, Erupted Tooth Requiring Elevation and/or Forceps
+This code covers a surgical extraction of a tooth that requires the dentist to section
+the tooth, remove bone, or use a surgical flap to achieve removal. It differs from a
+simple extraction (D7140), which involves only forceps with no bone removal. D7210 is
+commonly used for impacted wisdom teeth, severely broken-down teeth, or teeth with
+curved roots. Post-operative instructions include biting on gauze for 30–45 minutes,
+avoiding straws for 24 hours, and taking prescribed medications as directed.
+
+D3330 — Endodontic Therapy, Molar Tooth (Root Canal — 3 or More Canals)
+Root canal therapy on a molar tooth with three or more canals. The procedure involves
+removing the infected or inflamed pulp, shaping and disinfecting the canals with
+nickel-titanium files, and filling the space with gutta-percha. A temporary or
+permanent crown (D2740 or D2750) is typically recommended after root canal therapy
+to protect the tooth from fracture. Insurance coverage for D3330 varies widely —
+many plans cover 50–80% after deductible, but require pre-authorization on procedures
+exceeding $300.
+
+================================================================================
+SECTION 2: TREATMENT PLAN PRIORITIES
+================================================================================
+
+Dental treatment plans are typically organized into three priority categories:
+
+URGENT (Address within 1–2 weeks)
+Urgent conditions include acute dental infections (abscesses), severe pain from
+pulpitis or a fractured tooth, oral swelling that may indicate spreading infection,
+and trauma resulting in avulsed (knocked-out) or luxated teeth. A knocked-out
+permanent tooth should be re-implanted within 30 minutes for the best prognosis.
+Store the tooth in milk or saline — not water — until you reach the dental office.
+
+MODERATE (Address within 1–3 months)
+Moderate priority items include cavities that have reached the dentin layer (moderate
+decay), failing or cracked existing restorations, teeth with reversible pulpitis
+(sensitivity that resolves quickly), and early periodontal disease requiring scaling
+and root planing (D4341). Delaying moderate-priority treatment risks the condition
+escalating to an urgent or more complex (and expensive) situation.
+
+ROUTINE (Address within 6 months)
+Routine items include small enamel-only cavities, elective cosmetic procedures such
+as whitening or veneers, replacing old but functional amalgam restorations with
+tooth-colored alternatives, and preventive sealants for children and at-risk adults.
+
+================================================================================
+SECTION 3: COMMON PATIENT QUESTIONS
+================================================================================
+
+Q: Do root canals hurt?
+A: Modern root canal therapy is no more painful than getting a filling. The procedure
+is performed under local anesthesia, so the tooth and surrounding area are completely
+numb during treatment. Patients may experience mild soreness in the jaw for 2–3 days
+afterward, which is easily managed with over-the-counter ibuprofen or acetaminophen.
+The pain that drives most patients to need a root canal — the throbbing ache of an
+infected tooth — is far worse than the procedure itself.
+
+Q: How long does a filling last?
+A: The lifespan of a filling depends on material and placement. Composite (tooth-colored)
+fillings last 7–10 years on average; amalgam fillings last 10–15 years. Larger fillings
+and those in high-chew-force areas (molars) tend to wear faster. Signs a filling needs
+replacement include sensitivity, visible cracks, or food catching around the edges.
+
+Q: Is extraction better than a root canal?
+A: When possible, saving the natural tooth with a root canal is almost always preferred
+over extraction. Natural teeth are stronger, feel more natural for chewing, and prevent
+the adjacent teeth from drifting. After extraction, a dental implant (D6010) or bridge
+(D6240) is needed to restore the space, which typically costs more than root canal
+therapy plus a crown. However, if a tooth has insufficient bone support, a severe
+fracture below the bone level, or repeated root canal failures, extraction may be the
+clinically appropriate choice.
+
+================================================================================
+SECTION 4: WHAT TO EXPECT AT A CLEANING
+================================================================================
+
+A typical adult prophylaxis appointment (D1110) runs 45–60 minutes and follows this
+sequence:
+
+1. Medical history review — The hygienist updates your health history and medication
+   list. Certain medications (blood thinners, bisphosphonates, immunosuppressants)
+   affect dental treatment planning.
+
+2. Periodontal charting — Six measurements are taken around each tooth using a
+   millimeter probe. Readings of 1–3 mm are healthy; 4 mm or greater may indicate
+   pocketing associated with gum disease.
+
+3. Scaling — Hard calculus and soft plaque are removed from all tooth surfaces.
+   Patients with heavier buildup may feel pressure or mild discomfort; numbing gel
+   can be applied on request.
+
+4. Polishing — A gritty prophylaxis paste removes surface stains and smooths enamel.
+
+5. Flossing — Interdental spaces are cleaned and flossing technique is demonstrated.
+
+6. Fluoride — A fluoride varnish or gel is applied to strengthen enamel and reduce
+   sensitivity. Avoid eating or drinking for 30 minutes after application.
+
+7. Exam — The dentist joins for the D0120 evaluation, reviewing X-rays and performing
+   an oral cancer screening (soft tissue exam).
+
+================================================================================
+SECTION 5: INSURANCE PRE-AUTHORIZATION
+================================================================================
+
+Pre-authorization (also called pre-determination or prior authorization) is a process
+where the dental office submits a claim to the insurance company before performing
+treatment, so the patient knows their estimated out-of-pocket cost in advance.
+
+When is pre-authorization required?
+Most plans require pre-authorization for procedures expected to cost more than $300
+per tooth, including crowns, root canals on molars, surgical extractions, and
+periodontal surgery. Plans may also require it for implants (D6010), orthodontics
+(D8080), and bone grafts (D7953).
+
+How long does pre-authorization take?
+Processing typically takes 2–4 weeks. Some carriers offer electronic pre-authorization
+with same-day or next-day response. Pre-authorization is not a guarantee of payment —
+coverage is subject to eligibility at the time of service and plan maximums not being
+exhausted.
+
+What if my plan denies a pre-authorization?
+You have the right to appeal. Common grounds for appeal include medical necessity
+documentation from the dentist, a letter of dental necessity, and comparisons to
+alternative treatments. Ask your dentist's office for help submitting a peer-to-peer
+review or formal written appeal.
+
+Annual maximum: Most PPO dental plans have an annual maximum benefit of $1,000–$2,000.
+Once that maximum is reached, the patient is responsible for 100% of remaining costs
+until the plan year resets (usually January 1). Strategic treatment sequencing across
+calendar years can help patients maximize their benefits.
+
+================================================================================
+SECTION 6: MANAGING DENTAL ANXIETY
+================================================================================
+
+Dental anxiety affects an estimated 36% of the population, with 12% experiencing
+extreme dental fear. Left unaddressed, dental anxiety leads to appointment avoidance,
+which allows small problems to progress into more complex and costly ones. The good
+news is that modern dentistry offers many evidence-based strategies to help anxious
+patients receive care comfortably.
+
+Communicate with your dental team
+The single most effective step is telling your dentist and hygienist that you feel
+anxious. Dental teams are trained to accommodate fearful patients. Establish a stop
+signal — such as raising your left hand — so you can pause the procedure at any time.
+Knowing you are in control dramatically reduces perceived threat.
+
+Choose a supportive appointment time
+Schedule appointments early in the morning when you are less likely to have spent hours
+anticipating the visit. Avoid scheduling on days when you have other stressful events.
+Some patients find that bringing a trusted support person to sit in the waiting room
+provides meaningful reassurance.
+
+Breathing and grounding techniques
+Slow diaphragmatic breathing — inhale for four counts, hold for two, exhale for six —
+activates the parasympathetic nervous system and reduces the physiological stress
+response. Grounding techniques such as the "5-4-3-2-1" sensory method (identify five
+things you see, four you can touch, three you hear, two you smell, one you taste) can
+interrupt anxious thought patterns during treatment.
+
+Distraction tools
+Many dental offices now offer ceiling-mounted TVs, noise-canceling headphones with
+music or podcasts, and virtual reality headsets. Bringing your own earbuds with a
+familiar playlist is perfectly acceptable and can make a significant difference in
+perceived procedure length and discomfort.
+
+Nitrous oxide sedation (laughing gas)
+Nitrous oxide (N2O) mixed with oxygen is a safe, mild inhaled sedative delivered
+through a small nasal mask. It takes effect within two to three minutes, produces a
+pleasant sense of warmth and relaxation, and wears off completely within five minutes
+of removal — allowing patients to drive themselves home. Nitrous oxide is available
+at most general dental practices and is typically billed as a separate line item
+(CDT code D9230). It is safe for children and adults and has an excellent safety record.
+
+Oral sedation and IV sedation
+For patients with severe dental phobia or those undergoing lengthy procedures, oral
+sedation (a prescription anti-anxiety medication taken one hour before the appointment)
+or IV conscious sedation administered by a trained anesthesiologist provides deeper
+relaxation. Patients must arrange a driver when using oral or IV sedation. Not all
+dental practices offer these services; ask for a referral to a sedation dentistry
+specialist if needed.
+
+Building a long-term relationship
+Anxiety tends to decrease significantly once a patient builds trust with a consistent
+dental provider. Scheduling short, low-stakes "get acquainted" visits — such as
+a cleaning with no other treatment — before committing to a complex procedure allows
+the patient to experience the office environment positively. Many patients who begin
+with severe anxiety become routine visitors once they feel genuinely heard and respected
+by their dental team.
