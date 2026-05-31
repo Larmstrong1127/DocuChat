@@ -1,5 +1,7 @@
 # DocuChat — RAG-Powered Document Q&A
 
+[![CI](https://github.com/Larmstrong1127/docuchat/actions/workflows/ci.yml/badge.svg)](https://github.com/Larmstrong1127/docuchat/actions/workflows/ci.yml)
+
 Upload a PDF or text file, ask questions about it, and get grounded answers with source citations — powered by ChromaDB vector search and Claude.
 
 ---
